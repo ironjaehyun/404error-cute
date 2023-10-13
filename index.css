@@ -1,0 +1,244 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #24145E;
+}
+
+@keyframes rotation {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes rotations {
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+@keyframes shrinkAndGrow {
+    0% {
+        transform: scale(0);
+    }
+
+    25% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(0);
+    }
+
+    75% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes expandHorizontal{
+    from {
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
+
+@keyframes appearFronBottom{
+    from{
+        transform: translateY(1000px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+
+@keyframes shakingUpAndDown {
+    from{
+        transform:translate(0);
+    }
+    25%{
+        transform: translate(5px);
+    }
+    50%{
+        transform: translate(-5px);
+    }
+    75%{
+        transform: translate(5px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+@keyframes shakingUpAndDown-leg {
+    from{
+        transform:translate(0);
+    }
+    25%{
+        transform: translate(15px);
+    }
+    50%{
+        transform: translate(-15px);
+    }
+    75%{
+        transform: translate(15px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+@keyframes soaking {
+    to{
+        transform: translateY(-250px) scale(0);
+    }
+}
+
+@keyframes shirnkHorizontal{
+    to{
+        transform: scaleX(0);
+    }
+}
+
+#planet_2 {
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#planet_1 {
+    animation-name: rotation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#star_6{
+    animation: shrinkAndGrow 4s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+
+#star_6{
+    animation: shrinkAndGrow 2s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#star_3{
+    animation: shrinkAndGrow 6s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#star_5{
+    animation: shrinkAndGrow 9s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#star_7{
+    animation: shrinkAndGrow 11s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#star_9{
+    animation: shrinkAndGrow 4s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#star_8{
+    animation: shrinkAndGrow 2s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#star_2{
+    animation: shrinkAndGrow 2s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#star_1{
+    animation: shrinkAndGrow 1.5s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#star_4{
+    animation: shrinkAndGrow 1.5s infinite;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#UFO-beam{
+    animation: expandHorizontal 3.5s;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#number-0{
+    animation: appearFronBottom 3s;
+}
+
+#alien_hand-R{
+    animation : shakingUpAndDown 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#alien_hand-L{
+    animation : shakingUpAndDown 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#alien_Leg-L{
+    animation : shakingUpAndDown-leg 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#alien_Leg-R{
+    animation : shakingUpAndDown-leg 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#number-0-soaking {
+    animation: soaking 3s;
+    transform-origin: fill-box;
+    transform-origin: center;
+    animation-iteration-count: infinite;
+}
+
+
+#UFO-beam-disappearing {
+    animation : shirnkHorizontal 3s;
+    transform-origin: center;
+    transform-origin: fill-box;
+    animation-iteration-count: infinite;
+}
+
+#left-eye{
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+#right-eye{
+    animation-name: rotations;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
